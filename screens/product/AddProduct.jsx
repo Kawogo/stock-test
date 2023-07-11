@@ -1,6 +1,6 @@
 import { View, Text, SafeAreaView, TouchableOpacity, TextInput } from 'react-native'
 import React, { useState } from 'react'
-import SafeViewAndroid from '../components/SafeViewAndroid'
+import SafeViewAndroid from '../../components/SafeViewAndroid'
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
 import { AntDesign } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';

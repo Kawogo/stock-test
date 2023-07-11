@@ -1,10 +1,10 @@
 import { View, Text, SafeAreaView, TouchableOpacity, TextInput, FlatList } from 'react-native'
 import React from 'react'
-import SafeViewAndroid from '../components/SafeViewAndroid'
+import SafeViewAndroid from '../../components/SafeViewAndroid'
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
 import { AntDesign, Feather } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
-import CategoryItem from '../components/CategoryItem';
+import CategoryItem from '../../components/CategoryItem';
 
 const Products = () => {
   const navigation = useNavigation()
