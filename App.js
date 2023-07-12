@@ -14,6 +14,7 @@ import EditCategory from "./screens/category/EditCategory";
 import { Image, StyleSheet, Text, View } from 'react-native';
 import AppIntroSlider from 'react-native-app-intro-slider';
 import { useState } from "react";
+import Signup from "./screens/auth/Signup";
 
 const Stack = createNativeStackNavigator();
 
@@ -25,9 +26,9 @@ const slides = [
   {
     key: 1,
     title: 'Welcome',
-    text: desc1,
+    text: 'I\'m already out of descriptions\n\nLorem ipsum bla bla bla',
     image: require('./assets/images/1.png'),
-    backgroundColor: '#59b2ab',
+    backgroundColor: '#22bcb5',
   },
   {
     key: 2,
@@ -42,7 +43,14 @@ const slides = [
     text: 'I\'m already out of descriptions\n\nLorem ipsum bla bla bla',
     image: require('./assets/images/3.png'),
     backgroundColor: '#22bcb5',
-  }
+  },
+  {
+    key: 4,
+    title: 'Welcome',
+    text: desc1,
+    image: require('./assets/images/1.png'),
+    backgroundColor: '#59b2ab',
+  },
 ];
  
 
@@ -52,7 +60,7 @@ export default function App() {
 
   const renderItem = ({ item }) => {
    return (
-        <View className="items-center justify-center h-screen bg-green-400 p-4">
+        <View className="items-center justify-center h-screen bg-slate-300 p-4">
           <Text className="text-white text-2xl font-bold">{item.title}</Text>
           <Image source={item.image} className="w-96 h-96" />
           <Text className="text-white text-center text-lg">{item.text}</Text>
@@ -74,6 +82,7 @@ export default function App() {
           }
         }>
           <Stack.Screen name="Login" component={Login} />
+          <Stack.Screen name="Signup" component={Signup} />
           <Stack.Screen name="Home" component={Home} />
           <Stack.Screen name="Categories" component={Categories} />
           <Stack.Screen name="EditCategory" component={EditCategory} />

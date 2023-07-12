@@ -56,7 +56,7 @@ const navigation = useNavigation()
         </TouchableOpacity>
         <Text className="text-slate-500 text-center mt-3 mb-3 font-bold">Or</Text>
         <TouchableOpacity
-          onPress={() => navigation.navigate('Home')}
+          onPress={() => navigation.navigate('Signup')}
           className="h-12 border border-green-400 rounded-md flex flex-row justify-center items-center px-6"
         >
           <View className="flex-1 flex items-center">
